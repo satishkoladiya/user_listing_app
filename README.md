@@ -1,16 +1,25 @@
 # user_listing_app
 
-A new Flutter project.
+## Installation
+- Add [Flutter](https://flutter.dev/docs/get-started/install 'Flutter') to your machine
+- Open this project folder with Terminal/CMD
+- Ensure there's no cache/build left over by running `flutter clean` in the Terminal
+- Run in the Terminal `flutter pub get`
+- Run in the Terminal `dart run build_runner build --delete-conflicting-outputs`
 
-## Getting Started
+## Before Run
+- Make sure the .env(dev,prod) file is in the root project
 
-This project is a starting point for a Flutter application.
+## Running the App
+- Open Android Emulator
+- Run `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Build an APK
+- Run `flutter build apk --release` 
+- The apk will be saved under this location: `[project]/build/app/outputs/flutter-apk/`
+- We can also build appbundle (.aab) by running this command: `flutter build appbundle --flavor {RELEASE_TYPE}`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## More Info
+- APK build in folder /doc name file reqres
+- API use https://reqres.in/
